@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    [#include "../common/header.html" /]
+
+
+    <base target="_blank">
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox">
+        <div class="ibox-content">
+            <div class="row row-lg">
+                <div class="col-sm-12">
+                    <div id="toolbar" style="margin-bottom: 10px">
+                        <form id="searchForm" class="form-inline search-form" role="form" >
+
+                            <div class="btn-group btn-opts">
+                                <span id="btnAdd" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> 新增</span>
+                                <span id="btnMod" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> 修改</span>
+                                <span id="btnDel" class="btn btn-danger"><span class="glyphicon glyphicon-edit"></span> 删除</span>
+                            </div>
+
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="name" id="name" placeholder="名称" />
+                            </div>
+
+
+                            <div class="btn-group btn-opts">
+                                <div class="form-group">
+                                    <span id="btnSearch" type="button" class="btn btn-primary"> 查询</span>
+                                </div>
+
+<!--                                <div class="form-group">
+                                    <span id="btnExport" type="button" class="btn btn-primary"> 导出</span>
+                                </div>-->
+                            </div>
+                            <input id="props" name="props" type="hidden" value="">
+
+                        </form>
+                    </div>
+
+                    <table id="dataTable"
+                           class="table table-striped table-hover"
+                           data-toggle="table"
+                           data-toolbar="#toolbar"
+                           data-side-pagination="server"
+                           data-pagination="true"
+                           data-query-params="queryParams"
+                           data-sort-name="id"
+                           data-sort-order="desc"
+                           data-url="getList.html">
+                        <thead>`
+                        <tr>
+                            <th data-field="id" data-sortable="true" data-db-field="id">编号</th>
+                            <th data-field="name" >名称</th>
+                            <th data-field="parentId">父栏目</th>
+                            <th data-field="url">链接</th>
+                            <th data-field="modifyTime"  data-formatter="timeFormatter">修改时间</th>
+                            <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents">操作</th>
+                        </thead>
+                    </table>
+                </div><!-- /.col-lg-12 -->
+            </div><!-- /.row -->
+        </div><!-- /.ibox-content -->
+    </div><!-- /.ibox -->
+</div>
+
+[#include "../common/footer.html" /]
+<script src="${ctx}/public/js/app/column/index.js"></script>
+</body>
+
+</html>
