@@ -4,7 +4,7 @@ import java.util.Map;
 
 /**
  * @desc: 请求返回内容
- * @author:linguozhi@52tt.com
+ * @author:guice_lin@126.com
  * @date: 2016/3/2
  */
 public class Result {

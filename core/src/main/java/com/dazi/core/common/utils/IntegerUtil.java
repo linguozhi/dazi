@@ -8,7 +8,7 @@ import java.math.RoundingMode;
 
 /**
  * @description 整型工具类
- * @author <a href="mailto:linguozhi@52tt.com">soothing</a>
+ * @author <a href="mailto:guice_lin@126.com">soothing</a>
  * @since 2013-12-18
  * @version 1.0.0
  */

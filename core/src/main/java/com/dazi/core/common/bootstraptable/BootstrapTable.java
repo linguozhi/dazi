@@ -3,7 +3,7 @@ package com.dazi.core.common.bootstraptable;
 import java.util.ArrayList;
 
 /**
- * @author : linguozhi@52tt.com
+ * @author : guice_lin@126.com
  * @desc : bootstrap table 数据结构
  * @date :  2016/12/1
  */

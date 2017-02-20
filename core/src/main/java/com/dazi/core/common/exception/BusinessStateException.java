@@ -3,7 +3,7 @@ package com.dazi.core.common.exception;
 
 /**
  * @description
- * @author <a href="linguozhi@52tt.com">soothing</a>
+ * @author <a href="guice_lin@126.com">soothing</a>
  * @since 2016-07-13
  * @version 1.0.0
  */

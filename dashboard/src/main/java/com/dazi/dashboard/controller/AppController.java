@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @author : linguozhi@52tt.com
+ * @author : guice_lin@126.com
  * @desc : 应用入口
  * @date :  2017/2/9
  */

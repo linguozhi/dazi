@@ -1,7 +1,7 @@
 package com.dazi.dashboard.controller;
 
 /**
- * @author : linguozhi@52tt.com
+ * @author : guice_lin@126.com
  * @desc :
  * @date :  2017/2/9
  */

@@ -4,7 +4,7 @@
 
 /**
  *
- * @author linguozhi@52tt.com
+ * @author guice_lin@126.com
  * @desc 时间工具类
  * @date 2016-06-06
  */

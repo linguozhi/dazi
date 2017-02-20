@@ -2,7 +2,7 @@
 /**
  * 系统共用类
  *
- * @author linguozhi@52tt.com
+ * @author guice_lin@126.com
  * @since 2016-05-31
  * @version 1.0.0
  */

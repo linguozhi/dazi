@@ -2,7 +2,7 @@ package com.dazi.core.common.utils;
 
 /**
  * @desc: 缓存工具类
- * @author:linguozhi@52tt.com
+ * @author:guice_lin@126.com
  * @date: 2016/12/9
  */
 public class CacheUtil {

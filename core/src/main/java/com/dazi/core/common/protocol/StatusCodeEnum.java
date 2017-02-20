@@ -5,7 +5,7 @@ package com.dazi.core.common.protocol;
 
 /**
  * @description 业务状态码枚举
- * @author <a href="mailto:linguozhi@52tt.com">soothing</a>
+ * @author <a href="mailto:guice_lin@126.com">soothing</a>
  * @since 2016-01-28
  * @version 1.0.0
  */

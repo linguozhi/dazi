@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    [#include "../common/header.html" /]
+
+</head>
+<body>
+[#if (news.id)?? ]
+<form  name="form" action="${ctx}/news/update.html" method="post" onSubmit="return false;" class="form-horizontal">
+[#else]
+<form name="form" action="${ctx}/news/save.html" method="post" onSubmit="return false;"
+class="form-horizontal">
+[/#if]
+
+    <input type="hidden" name="id" value="${news.id!}">
+    <div class="form-group">
+        <label class="col-sm-3 control-label">标题：</label>
+
+        <div class="col-sm-6">
+            <input type="text" placeholder="标题" class="form-control" id="name" name="name" value="${news.name!}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label">绑定栏目：</label>
+
+        <div class="col-sm-3">
+            <select class="form-control chosen-select" name="columnId" id="columnId" style="display: none;">
+                <option value="">请选择栏目</option>
+                [#list columnList as column ]
+                <option value="${column.id}">${column.name}</option>
+                [/#list]
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label">内容：</label>
+
+        <div class="col-sm-8">
+            <script id="container" name="content" type="text/plain">
+                ${news.content!}
+                </script>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-8">
+            <button type="button" class="btn btn-default" onclick="javascript:history.back()">返回</button>
+            <button type="submit" class="btn btn-success">保 存</button>
+        </div>
+    </div>
+</form>
+
+</body>
+
+[#include "../common/footer.html" /]
+<script type="text/javascript" src="${ctx}/public/js/plugins/ueditor/ueditor.config.js?v=0614"></script>
+<script type="text/javascript" src="${ctx}/public/js/plugins/ueditor/ueditor.all.js?v=0614"></script>
+
+<script type="text/javascript" src="${ctx}/public/js/app/news/edit.js?v=0614"></script>
+
+</html>

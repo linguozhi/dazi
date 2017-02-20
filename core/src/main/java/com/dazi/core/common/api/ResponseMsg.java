@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * @description 响应信息
- * @author:linguozhi@52tt.com
+ * @author:guice_lin@126.com
  * @date: 2016/3/1
  */
 public class ResponseMsg {

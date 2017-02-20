@@ -15,7 +15,7 @@ import java.util.TreeMap;
 
 /**
  * @desc: 通用接口客户端
- * @author:linguozhi@52tt.com
+ * @author:guice_lin@126.com
  * @date: 2016/3/1
  */
 public class ApiClient {

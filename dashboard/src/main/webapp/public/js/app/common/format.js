@@ -2,7 +2,7 @@
 /**
  * 格式化工具类
  *
- * @author linguozhi@52tt.com
+ * @author guice_lin@126.com
  * @since 2014-07-29
  * @version 1.0.0
  */

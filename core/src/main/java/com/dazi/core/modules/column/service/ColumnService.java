@@ -47,4 +47,12 @@ public class ColumnService {
         Assert.notNull(record, "查询对象不能为空");
         return columnMapper.selectList(record, order, offset, count);
     }
+
+    /**
+     * 查询所有栏目(慎用)
+     * @return
+     */
+    public List<Column> selectAll() {
+        return selectList(new Column(), null, 0, -1);
+    }
 }

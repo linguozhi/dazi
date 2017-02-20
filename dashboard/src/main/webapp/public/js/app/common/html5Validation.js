@@ -5,7 +5,7 @@
  * e.g.:
  * 		$("input,select,textarea").not("[type=submit]").html5Validate();
  *
- * @author linguozhi@52tt.com
+ * @author guice_lin@126.com
  * @date 2016-05-31
  */
 var Html5Validation;
